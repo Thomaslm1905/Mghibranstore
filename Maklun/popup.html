@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maklun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="banner">
+    <video autoplay loop muted plays-inline>
+      <source src="Img/lv_0_20240117191336.mp4">
+    </video>
+    <section class="section-card" style="text-align: center;">
+        <div class="card card-1">
+          <img src="Img/—Pngtree—business cooperation_5937351.png" alt="Maklun"
+          
+           alt="Baju hitam" class="card__img">
+          <div class="card__details">
+            <ul>
+              <li>Mendapatkan pekerjaan yang diberikan oleh konveksi lain.</li>
+              <li>Mendapatkan pola potongan kain seperti saku dan kancing.</li>
+            </ul>
+          </div>
+          <a href="#popup" class="btn2">Description</a>
+        </div>
+    
+        
+      </section>
+
+    <div class="container button">
+        <a href="/index.html" class="btn">X</a>
+    </div>
+    
+    <!-- pop up start -->
+      <div class="popup" id="popup">
+        <div class="popup__content" style="justify-content: center;">
+          <div class="popup__img">
+            <img src="Img/celana.jpg" alt="Maklun">
+            <a href="#" class="popup__close">&times;</a>
+          </div>
+          <div class="popup__header">
+            <h1>aktivitas Maklun</h1>
+            <h2>baca aktivitas tersebut untuk melihat kinerja kami</h2>
+          </div>
+          <div class="popup__text">
+            <p class="text1"></p>
+            <p class="text2"></p>
+          </div>
+        </div>
+      </div> 
+      <!-- gsap -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+      <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.text1', {duration: 20, delay: 8,  text: '1 : biasanya konveksi kami mendaptkan pekerjaan dari konveksi lain yang biasanya memerlukan tenaga kerja lebih karena banyaknya orderan. 2 : Potongan pola seperti saku dan disewing ke baju atau kameja. dan biasanya konveksi kami juga menyediakan jasa mengancing '})
+      gsap.to('.text2', {duration: 20, delay: 8,  text: 'kami memberikan fasilitas dan kualitas yang terbaik untuk customer,agar mendapatkan income yang banyak .'})
+        </script>
+</body>
+</html>
